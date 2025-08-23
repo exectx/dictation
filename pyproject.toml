@@ -1,0 +1,16 @@
+[project]
+name = "dictation-poc"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numba>=0.59.0",
+    "numpy>=2.2.6",
+    "parakeet-mlx>=0.3.5",
+    "pynput>=1.8.1",
+    "pyobjc[allbindings]>=11.1",
+    "pyobjc-core>=11.1",
+    "pyobjc-framework-quartz>=11.1",
+    "sounddevice>=0.5.2",
+]

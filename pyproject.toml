@@ -13,4 +13,5 @@ dependencies = [
     "pyobjc-core>=11.1",
     "pyobjc-framework-quartz>=11.1",
     "sounddevice>=0.5.2",
+    "rich>=13.7.1",
 ]

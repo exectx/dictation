@@ -1,7 +1,7 @@
 """Speech-to-text hold-to-record prototype.
 
 Flow:
-    1. Hold activation key to begin recording (non‑blocking input stream)
+    1. Hold activation key to begin recording (non-blocking input stream)
     2. Release key -> audio snapshot -> background transcription -> fast Unicode typing
 
 Design highlights:
@@ -495,9 +495,9 @@ if __name__ == "__main__":
         warmup_file = Path(__file__).parent / "warmup.wav"
         if warmup_file.exists():
             model.transcribe(str(warmup_file))
-            logger.debug("Model warm-up complete.")
+            logger.info("Model warm-up complete.")
         else:
-            logger.debug("Warm-up file not found (skipped).")
+            logger.warning("Warm-up file not found (skipped).")
     except Exception as e:
         logger.warning("Warm-up failed: %s", e)
     recorder = Recorder(model, device=selected_device)

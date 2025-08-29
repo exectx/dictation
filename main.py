@@ -534,7 +534,7 @@ if __name__ == "__main__":
     except Exception:
         hotkey_label = str(ACTIVATION_KEY)
     logger.info(
-        "Hold %s to record; release to transcribe & type (Esc to exit).", hotkey_label
+        "Hold %s to record; release to transcribe & type.", hotkey_label
     )
 
     # simplified key-state handling; encapsulated in a HotkeyHandler to avoid nonlocal/global issues
